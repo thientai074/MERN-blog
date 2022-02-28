@@ -1,0 +1,51 @@
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "hung",
+    "password": "hung"
+}
+
+###
+
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hung",
+    "password": "hung"
+}
+
+###
+POST http://localhost:8000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQxNjU1MTA2MjZmNjk4YThhMzliOTQiLCJpYXQiOjE2NDExMTI5Mjh9.aBu-JpR72R2gg43IV7ubRtNUYfXReoatTrEdO8E2HaQ
+
+{
+    "title" : "Hai",
+    "description": "yy",
+    "imgUrl": "aaa"
+}
+
+###
+GET http://localhost:8000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQxNjU1MTA2MjZmNjk4YThhMzliOTQiLCJpYXQiOjE2NDExMTM3ODZ9.4Klo9UyEokTMZpRsVKk_VZ7B_Sa_T2a54Ygbs0JkAJo
+
+###
+PUT http://localhost:8000/api/posts/61d1656f0626f698a8a39b97
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQxNTBiY2NhNDNlMzE3YjNmZDg4MGQiLCJpYXQiOjE2NDExMTE5MTJ9.lxpmrdJRQl5AlxU2PJRtXQH_krYa3sU_GlmA1XFCyMo
+
+{
+    "title" : "alo",
+    "description": "hai222",
+    "imgUrl": "alo"
+}
+
+###
+GET http://localhost:8000/api/posts/61d167949ef5a3bfa75d2167
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQxNjU1MTA2MjZmNjk4YThhMzliOTQiLCJpYXQiOjE2NDExMTM3ODZ9.4Klo9UyEokTMZpRsVKk_VZ7B_Sa_T2a54Ygbs0JkAJo
+
+###
+DELETE http://localhost:8000/api/posts/61d166eb9ef5a3bfa75d2160
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQxNjU1MTA2MjZmNjk4YThhMzliOTQiLCJpYXQiOjE2NDExMTM3ODZ9.4Klo9UyEokTMZpRsVKk_VZ7B_Sa_T2a54Ygbs0JkAJo

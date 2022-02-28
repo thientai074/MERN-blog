@@ -1,0 +1,47 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content:content;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("git");
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.registerTitle {
+    font-size: 50px;
+}
+
+.registerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.registerForm label {
+    margin: 10px 0;
+}
+
+.registerInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.registerRegisterButton {
+    border: none;
+    border-radius:8px;
+    background-color: aquamarine;
+}
+ 
+.registerLoginButton {
+    border: none;
+    border-radius:8px;
+    background-color: #ec5e6f !important;
+    margin-left: 6px;
+    width: 70px;
+}
